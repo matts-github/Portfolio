@@ -1,0 +1,247 @@
+#contact-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.contact-info {
+    color: #367588;
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+.det-description {
+    margin-top: 5px;
+}
+// Media quiries 
+@media screen and (max-width: 767px) {
+    #contact-info {
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .contact-content {
+        padding: 0 2rem 2rem;
+    }
+    }
+    #contact {
+        margin-bottom: 15px;
+        padding-bottom: 2px;
+        color: #367588;
+        position: relative;
+        left: 0;
+    }
+    .phone {
+        position: relative;
+        left: 0;
+        padding-bottom: 15px;
+        font-size: 3vw;
+    }
+    .details {
+        text-decoration: none;
+        color: #367588;
+        position: relative;
+        top: 10px;
+        margin-bottom: 50px;
+    }
+    .details .email {
+        position: relative;
+        top: 10px;
+        margin-bottom: 15px;
+        left: -10px;
+        padding-bottom: 50px;
+        font-size: 3vw;
+    }
+    .form-name {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-name .fname {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 50%;
+    }
+    .form-name .lname {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 50%;
+    }
+    .style-input {
+        display: flex;
+        background-color: #495057;
+        color: #fff;
+        border: 2px solid #367588;
+        padding: 1px 8px;
+        margin-bottom: 1em;
+        width: 95%;
+        height: 50%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        // font-size: 1.5rem; only want this in the email details
+        margin-left: 10px;
+        width: 100%;
+        // font-size: 6vw; only want this in the email details
+    }
+    .subject {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 100%;
+    }
+    #message {
+        border: 1px solid #367588;
+        margin-left: 10px;
+    }
+    .btn {
+        font-weight: 600;
+        font-size: 1.25rem;
+        background-color: #495057;
+        color: #367588;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-left: 10px;
+    }
+    .btn:hover {
+        background-color: #fff;
+    }
+    // button
+    .scroll-up {
+        display: block;
+        padding-bottom: 30px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        width: 250px;
+        margin: auto;
+    }
+    .scroll-up, i {
+        color: #fff;
+        transition: 0.5s;
+    }
+    .scroll-up, a {
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .wrapper main .scroll-up:hover > * {
+        color: #367588;
+    }
+    .scroll-up, i:hover {
+        color: #367588;
+    }
+    .scroll-up, a:hover {
+        color: #367588;
+    }
+    
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+    .form-name {
+        flex-direction: column;
+    }
+    .form-name .fname {
+        width: 100%;
+    }
+    .form-name .lname {
+        width: 100%;
+    }
+@media screen and (min-width: 768px) {
+
+     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        #contact-content {
+            flex-direction: row;
+            margin-top: 50px;
+            padding: 3rem 4rem 3rem;
+            padding-left: 500px;
+        }
+     }
+    #contact-content {
+        flex-direction: row;
+        margin-top: 50px;
+        padding: 3rem 4rem 3rem;
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        // font-size: 1.5rem; only want this in email details
+        margin-left: 10px;
+        width: 97%;
+    }
+    .subject {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 97%;
+    }
+    #message {
+        border: 1px solid #367588;
+        margin-left: 10px;
+        width: 95%;
+    }
+    .details h3:hover {
+        color: #fff;
+    }
+    .contact-info {
+        font-size: 1.1rem;
+        padding-left: 0;
+    }
+    .contact-form {
+        width: 58%;
+    }
+    .form-name {
+        display: flex;
+        flex-direction: row;
+    }
+    .details .phone {
+        position: relative;
+        right: 135px;
+        top: 0;
+        font-size: 3vh;
+    }
+    .details .email {
+        position: relative;
+        left: -10px;
+        top: 0;
+        margin-bottom: 50px;
+        font-size: 3vw;
+    }
+    .email {
+        // margin-bottom: 10px;
+    }
+    .message {
+            display: flex;
+            flex-direction: column;
+            width: 97%;
+    }
+    .message .error {
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media screen and (max-width: 1200px) {
+    #contact {
+        font-size: 1.3rem;
+    }
+    .contact-info {
+        font-size: 1.1rem;
+        width: 50%;
+    }
+}
+.scroll-down, a:hover {
+    color: #fff;
+}
+.scroll-down, i:hover {
+    color: #fff;
+}

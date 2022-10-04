@@ -1,0 +1,136 @@
+.about-content {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 12, 0.692),
+      rgba(12, 12, 12, 0.856)
+    ),
+    url("../img/heromatt.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82vh;
+}
+
+.life-text {
+  margin-left: 32px;
+  margin-right: 25px;
+}
+
+.life-text p {
+  padding-bottom: 23px;
+}
+
+#about-me .about-text .about-life {
+  flex-direction: row;
+}
+#about-me .about-text h2 {
+  position: relative;
+  left: 10px;
+}
+#about-me .about-text .exp h3 {
+  display: inline-block;
+  padding-top: 15px;
+  font-size: 1.6rem;
+  padding-left: 10px;
+  color: #fff;
+}
+#about-me .about-text .exp h5 {
+  font-size: 1.4rem;
+  padding-left: 10px;
+  font-weight: 400;
+  color: #fff;
+}
+#about-me .about-text h2 {
+  font-size: 2.2rem;
+  padding-left: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#about-me .about-text .introduce {
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+#about-me .about-text .about-life {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#about-me .about-text p {
+  font-size: 1.5rem;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+.about-text {
+  position: relative;
+  top: -50px;
+}
+.initial-container:hover {
+  background-color: #367588;
+}
+@media screen and (max-width: 1023px) {
+  #about-me .about-text .about-life {
+    flex-direction: column;
+  }
+  #about-me .img-container {
+    max-width: 100%;
+  }
+  #about-me,
+  .img-container #dog {
+    width: 100%;
+  }
+  .about-text h2 .introduce .about-life p h2 h3 .exp h5 {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-me .about-text h2 {
+    position: relative;
+    left: 10px;
+  }
+  #about-me .about-text .exp h3 {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 1.6rem;
+    padding-left: 10px;
+    color: #fff;
+  }
+  #about-me .about-text .exp h5 {
+    font-size: 1.4rem;
+    padding-left: 10px;
+    font-weight: 400;
+    color: #fff;
+  }
+  #about-me .about-text h2 {
+    font-size: 2.2rem;
+    padding-left: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  #about-me .about-text .introduce {
+    margin-top: 80px;
+  }
+  #about-me .about-text .about-life {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #about-me .about-text p {
+    font-size: 1.5rem;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+  }
+}
+#about-title {
+  position: relative;
+  top: -30px;
+  color: #fff;
+}
+@media screen and (max-width: 233px) {
+  #about-title {
+    font-size: 2rem;
+  }
+}

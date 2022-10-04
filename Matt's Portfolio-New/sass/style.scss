@@ -1,0 +1,200 @@
+@import 'partials/banner.scss';
+@import 'partials/portfolio.scss';
+@import 'partials/contact.scss';
+@import 'partials/mobile-nav.scss';
+@import 'partials/projects.scss';
+@import 'partials/nav-bar.scss';
+@import 'partials/about-profile.scss';
+@import 'partials/coding-examples.scss';
+@import 'partials/scs-scheme.scss';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #000;
+}
+#about-me {
+    text-align: center;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .wrapper main {
+        padding-left: 1000px;
+    }
+}
+// Media queires
+@media screen and (max-width: 1023px) {   
+}
+@media screen and (min-width: 1024px) {
+        .wrapper main {
+            margin-left: 13.5rem;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            position: relative;
+            left: 250px;
+        }
+    }
+}
+//internet explorer
+
+    @media screen and (max-width: 767px) {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .projects-content {
+            flex-direction: column;
+        }
+    }
+    }
+    @media screen and (min-width: 1024px){
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            .projects-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            }
+    }
+}      
+
+
+.about-me::after {
+    content: "";
+    // position: absolute;
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#sidebar {
+    position: fixed;
+    width: 300px;
+    // height: 520%;
+    background: #000;
+    left: -300px;
+    z-index: 1000;
+    transition: .4s;
+    height: 100%;
+}
+#sidebar.active {
+    left: 0;
+}
+#sidebar ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 24px;
+}
+
+// #sidebar .hamburger {
+//     position: absolute;
+//     top: 5px;
+//     left: 300px;
+// }
+.hamburger {
+    position: fixed;
+    top: 5px;
+    left: 0; 
+    z-index: 98;
+}
+#error {
+    color: red;
+}
+html, body {
+    overflow-x: hidden;
+}
+    
+.error {
+    color: #e74c3c;
+    margin-bottom: 1em;
+}
+
+#example-description {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+@media screen and (min-width: 992px) {
+    #projects {
+        padding: 2rem 2rem 0rem 5rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    #about-me .about-text p {
+        font-size: 1.5rem;
+        color: #fff;
+        border-bottom: 3px solid #fff;
+        width: 70%;
+        margin-left: 200px;
+    }
+    #scs-scheme .scs-intro {
+        border-bottom: 3px solid #fff;
+        width: 80%;
+        margin-left: 140px;
+    }
+}
+.ph {
+    display: inline-block;
+    padding-top: 20px;
+    // padding-bottom: 50px;
+}
+.ph .det-description {
+    display: inline;
+    margin-top: 5px;
+}
+.ph .details .phone {
+    display: inline-block;
+    top: -10px;
+}
+.em .det-description {
+    display: inline;
+    margin-top: 5px;
+}
+.em .details .email {
+    display: inline-block;
+    // top: -10px;
+}
+.nav-social i:hover {
+    color: #367588;
+}
+#typewritter {
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .details .phone {
+        position: relative;
+        right: 135px;
+        top: 0;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .details .email {
+        position: relative;
+        top: 10px;
+        margin-bottom: 15px;
+        left: -10px;
+        padding-bottom: 50px;
+        font-size: 1.5rem;
+    }
+}
+input.invalid {
+    border: 1px solid red;
+}
+.hidden {
+    display: none;
+}
+.thank-you {
+    color: #fff;
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+}

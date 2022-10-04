@@ -1,0 +1,120 @@
+#coding-examples .wrapper {
+    background-image: url(img/placeholder.jpg);
+}
+.initial-container:hover {
+    background-color: #367588;
+}
+#coding-examples {
+    background-image: 
+    linear-gradient(to bottom, rgba(11, 12, 22, 0.52), rgba(15, 10, 14, 0.73)),
+    url('../img/placeholder.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+#coding-examples header h2 {
+    text-align: center;
+}
+.about-me {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .about-me {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+    #example-description {
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .about-me {
+        display: flex;
+        justify-content: center;
+        font-size: 4rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .about-me {
+        display: flex;
+        justify-content: center;
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .about-me {
+        display: flex;
+        justify-content: center;
+        font-size: 5rem;
+    }
+}
+#ref {
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#ref-1 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+pre {
+    color: #fff;
+}
+
+.coming-soon {
+    margin-left: 50px;
+}
+h2 {
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+// #outer_exp {
+//     margin-left: 50px;
+//     margin-right: 50px;
+// }
+
+#outer_img {
+    margin: 50px;
+}
+#outer_description {
+    margin: 50px;
+}
+
+table {
+    color: #fff;
+    background-color: #367588;
+    margin-left: auto;
+    margin-right: auto;
+    border: #367588;
+    width: 100%;
+}
+thead {
+    background-color: grey;
+}
+
+#space {
+    margin-top: 10px;
+}
+.scroll {
+    color: limegreen;
+}
+.example {
+    color: limegreen;
+}
+@media screen and (max-width: 687px) {
+    .scroll {
+        overflow-x: scroll;
+        margin-top: 10px;
+    }
+}
